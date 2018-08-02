@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    image: gener_app:latest
+    build: .
+    volumes:
+      - .:/go/src/gener
+    ports:
+      - "8085:8085"
+
